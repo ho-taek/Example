@@ -46,9 +46,13 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.2")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.2")
+
+    //Test code
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
+    androidTestImplementation("org.mockito:mockito-android:2.24.5")
+    testImplementation("org.mockito:mockito-inline:2.21.0")
 
     //Hilt
     implementation("com.google.dagger:hilt-android:2.37")
