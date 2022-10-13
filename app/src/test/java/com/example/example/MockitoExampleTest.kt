@@ -63,6 +63,8 @@ class MockitoExampleTest {
         `when`(example.getId()).thenReturn(100)
         `when`(example.getUrl(100)).thenReturn("https://codechacha.com")
 
+        example.getId()
+        example.getId()
         val url = example.getUrl(example.getId())
 
         verify(example).getUrl(ArgumentMatchers.eq(100)) // 1
