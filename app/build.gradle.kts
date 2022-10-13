@@ -2,10 +2,11 @@ plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
-    compileSdk = 32
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.example.example"
@@ -16,7 +17,11 @@ android {
         testInstrumentationRunner ="androidx.test.runner.AndroidJUnitRunner"
     }
 
+
     buildTypes {
+        getByName("debug"){
+            isDebuggable = true
+        }
         getByName("release") {
             isMinifyEnabled = false
             proguardFiles(
@@ -51,9 +56,10 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    androidTestImplementation("org.mockito:mockito-android:2.24.5")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:4.0.0")
     testImplementation("org.mockito:mockito-inline:2.21.0")
-
+    testImplementation("org.objenesis:objenesis:3.2")
+    implementation("net.bytebuddy:byte-buddy:1.12.18")
     //Hilt
     implementation("com.google.dagger:hilt-android:2.37")
     kapt("com.google.dagger:hilt-android-compiler:2.37")
