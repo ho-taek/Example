@@ -1,17 +1,11 @@
-package com.example.example
+package com.example.example.presentation
 
-import android.app.Activity
 import android.os.Bundle
-import android.provider.ContactsContract
-import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.widget.ViewPager2
-import com.example.example.adapter.MainViewPagerAdapter
-import com.example.example.base.BaseActivity
+import com.example.example.R
+import com.example.example.presentation.adapter.MainViewPagerAdapter
+import com.example.example.presentation.base.BaseActivity
 import com.example.example.databinding.ActivityMainBinding
-import com.example.example.util.changeFragment
-import com.example.example.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

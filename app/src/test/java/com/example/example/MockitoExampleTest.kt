@@ -1,5 +1,6 @@
 package com.example.example
 
+import com.example.example.presentation.MockitoExample
 import org.junit.Assert.assertEquals
 import org.junit.Assert.fail
 import org.junit.Test

@@ -60,6 +60,7 @@ dependencies {
     testImplementation("org.mockito:mockito-inline:2.21.0")
     testImplementation("org.objenesis:objenesis:3.2")
     implementation("net.bytebuddy:byte-buddy:1.12.18")
+
     //Hilt
     implementation("com.google.dagger:hilt-android:2.37")
     kapt("com.google.dagger:hilt-android-compiler:2.37")
@@ -73,6 +74,18 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.6.0")
 
     //coroutine
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+
+    //Gson
+    implementation("com.google.code.gson:gson:2.9.0")
+
+    //Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    //OkHttp
+    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.2")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.1")
+
 }

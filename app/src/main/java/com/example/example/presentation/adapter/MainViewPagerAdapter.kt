@@ -1,11 +1,11 @@
-package com.example.example.adapter
+package com.example.example.presentation.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.example.BeerFragment
-import com.example.example.CoffeeFragment
-import com.example.example.SojuFragment
+import com.example.example.presentation.BeerFragment
+import com.example.example.presentation.CoffeeFragment
+import com.example.example.presentation.SojuFragment
 
 class MainViewPagerAdapter(fragment : FragmentActivity) : FragmentStateAdapter(fragment) {
     override fun getItemCount(): Int {

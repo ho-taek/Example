@@ -1,9 +1,9 @@
-package com.example.example
+package com.example.example.presentation
 
 import android.os.Bundle
 import android.view.View
-import androidx.fragment.app.Fragment
-import com.example.example.base.BaseFragment
+import com.example.example.R
+import com.example.example.presentation.base.BaseFragment
 import com.example.example.databinding.FragmentCoffeeBinding
 import dagger.hilt.android.AndroidEntryPoint
 

@@ -1,4 +1,4 @@
-package com.example.example.util
+package com.example.example.presentation.util
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
