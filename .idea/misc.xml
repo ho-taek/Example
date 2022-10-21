@@ -3,11 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="../../../../layout/custom_preview.xml" value="0.11116717120753447" />
+        <entry key="app/src/main/res/drawable/ic_character.xml" value="0.17" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.17" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.29265280587332587" />
         <entry key="app/src/main/res/layout/fragment_beer.xml" value="0.25181159420289856" />
         <entry key="app/src/main/res/layout/fragment_beer_fragement.xml" value="0.25181159420289856" />
         <entry key="app/src/main/res/layout/fragment_coffee.xml" value="0.25181159420289856" />
         <entry key="app/src/main/res/layout/fragment_soju.xml" value="0.25181159420289856" />
+        <entry key="app/src/main/res/layout/item_puzzle.xml" value="0.2504528985507246" />
+        <entry key="app/src/main/res/layout/item_puzzle_board.xml" value="0.2346014492753623" />
+        <entry key="app/src/main/res/layout/item_puzzle_text.xml" value="0.21920289855072464" />
         <entry key="app/src/main/res/menu/main_menu.xml" value="0.3171875" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.3182291666666667" />
       </map>
@@ -18,5 +24,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2504528985507246" />
+      </ProjectState>
+    </option>
   </component>
 </project>

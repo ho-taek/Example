@@ -88,4 +88,11 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.2")
     implementation("com.squareup.okhttp3:logging-interceptor:4.9.1")
 
+    //glide
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+    implementation("com.github.bumptech.glide:okhttp3-integration:4.11.0")
+
+    //Timber
+    implementation("com.jakewharton.timber:timber:4.7.1")
 }

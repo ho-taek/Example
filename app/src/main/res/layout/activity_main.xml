@@ -5,6 +5,13 @@
 
     <data>
 
+        <variable
+            name="viewmodel"
+            type="com.example.example.presentation.viewmodel.MainVIewModel" />
+
+        <variable
+            name="onAdapterListener"
+            type="com.example.example.presentation.adapter.PuzzleAdapter.OnAdapterListener" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,25 +19,34 @@
         android:layout_height="match_parent"
         tools:context=".presentation.MainActivity">
 
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewpager_main"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/bottom_nav_main"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_puzzle_board"
+            data="@{viewmodel.boardImage}"
+            isSwappable="@{true}"
+            onAdapterListener="@{onAdapterListener}"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:orientation="horizontal"/>
+            app:layout_constraintTop_toTopOf="parent"
+            app:spanCount="4"
+            tools:itemCount="16" />
 
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_nav_main"
-            android:layout_width="match_parent"
-            android:layout_height="78dp"
-            app:menu="@menu/main_menu"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_puzzle_content"
+            data="@{viewmodel.puzzleContentImage}"
+            isSwappable="@{true}"
+            onAdapterListener="@{onAdapterListener}"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintEnd_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rc_puzzle_board" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
