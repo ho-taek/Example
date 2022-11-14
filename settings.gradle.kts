@@ -10,3 +10,4 @@ rootProject.name = "Example"
 include(":app")
 include(":piechart")
 include(":designpattern")
+include(":compose")
