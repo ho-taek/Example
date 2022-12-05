@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.piechart.base.BaseActivity
 import com.example.piechart.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
+
 
 class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
 

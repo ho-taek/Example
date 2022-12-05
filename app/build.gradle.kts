@@ -49,8 +49,6 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.5.1")
     implementation("com.google.android.material:material:1.6.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.5.2")
-    implementation("androidx.navigation:navigation-ui-ktx:2.5.2")
 
     //Test code
     testImplementation("junit:junit:4.13.2")
@@ -62,8 +60,8 @@ dependencies {
     implementation("net.bytebuddy:byte-buddy:1.12.18")
 
     //Hilt
-    implementation("com.google.dagger:hilt-android:2.37")
-    kapt("com.google.dagger:hilt-android-compiler:2.37")
+    implementation("com.google.dagger:hilt-android:2.42")
+    kapt("com.google.dagger:hilt-android-compiler:2.42")
 
     //viewmodel
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
@@ -95,4 +93,8 @@ dependencies {
 
     //Timber
     implementation("com.jakewharton.timber:timber:4.7.1")
+
+    //Navigation
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
 }

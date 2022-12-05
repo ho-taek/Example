@@ -12,7 +12,9 @@ import androidx.core.content.ContextCompat
 import com.example.example.R
 import com.example.example.databinding.ActivityGalleryBinding
 import com.example.example.presentation.base.BaseActivity
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class GalleryActivity : BaseActivity<ActivityGalleryBinding>(R.layout.activity_gallery) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
