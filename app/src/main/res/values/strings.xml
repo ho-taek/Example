@@ -20,4 +20,6 @@
 
     <string name="puzzle_title">퍼즐조각</string>
     <string name="puzzle_sentence">조각을 꾹 눌러서 위 퍼즐판에 넣고 뺄 수 있어요!</string>
+
+    <string name="zero">0</string>
 </resources>

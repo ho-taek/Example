@@ -9,4 +9,6 @@ class ExampleApplication : Application() {
     init{
         Timber.plant(Timber.DebugTree())
     }
+
+
 }

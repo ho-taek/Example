@@ -10,13 +10,13 @@ import com.example.example.databinding.ActivityMainBinding
 import com.example.example.domain.PuzzleBoard
 import com.example.example.presentation.adapter.PuzzleAdapter
 import com.example.example.presentation.base.BaseActivity
-import com.example.example.presentation.viewmodel.MainVIewModel
+import com.example.example.presentation.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 
 @AndroidEntryPoint
 class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main), PuzzleAdapter.OnAdapterListener {
-    private val mainViewModel: MainVIewModel by viewModels()
+    private val mainViewModel: MainViewModel by viewModels()
 
     private lateinit var puzzleAdapter: PuzzleAdapter
 

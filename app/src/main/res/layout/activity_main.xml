@@ -7,7 +7,7 @@
 
         <variable
             name="viewmodel"
-            type="com.example.example.presentation.viewmodel.MainVIewModel" />
+            type="com.example.example.presentation.viewmodel.MainViewModel" />
 
         <variable
             name="onAdapterListener"

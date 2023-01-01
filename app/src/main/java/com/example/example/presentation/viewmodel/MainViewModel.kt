@@ -2,15 +2,17 @@ package com.example.example.presentation.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import com.example.example.domain.PuzzleBoard
 import dagger.hilt.android.lifecycle.HiltViewModel
 import java.util.*
 import javax.inject.Inject
-import kotlin.Comparator
 
 @HiltViewModel
-class MainVIewModel @Inject constructor() : ViewModel() {
+class MainViewModel @Inject constructor(
+    private val handle : SavedStateHandle
+) : ViewModel() {
 
     private var _boardImage = MutableLiveData<List<PuzzleBoard>>()
     val boardImage : LiveData<List<PuzzleBoard>>
